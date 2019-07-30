@@ -29,4 +29,4 @@ Porciones de código diseñados para comprobar que el código principal está fu
 - [Catch 2](https://github.com/catchorg/Catch2)
 
 ## Secciones
-1. [Introduction to C++ Programming, Input/Output and Operators](docs/intro.md)
+1. [Introduction to C++ Programming, Input/Output and Operators](/docs/intro.md)
