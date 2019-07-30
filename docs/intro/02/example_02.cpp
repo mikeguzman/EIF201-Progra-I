@@ -18,7 +18,6 @@ int main(int argc, const char *argv[]) {
     std::cout << "Welcome ";
     std::cout << "to the UNA" << std::endl;
 
-    std::cout << "Welcome\nto\n\nUNA!\n";
-
+    std::cout << "Welcome\nto\n\nC++!\n";
     return 0;
 }
