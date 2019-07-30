@@ -9,4 +9,5 @@
         - To define a function, you must specify a return type to indicate the type of the value returned by the function when it completes its task.
         - Return type void indicates that displayMessage will not return any data.
         - UML Class Diagram for Class GradeBook:
-[GradeBook UML]: https://github.com/mikeguzman/EIF201-Progra-I/blob/master/docs/02_objects/resources/myfirstclass_uml.jpg "GradeBook UML"
+
+        [cmake]: https://github.com/Falven/cpp-clion-template/raw/master/resources/cmake.png "CMake Sample Results"
