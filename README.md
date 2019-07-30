@@ -30,4 +30,4 @@ Porciones de código diseñados para comprobar que el código principal está fu
 
 ## Secciones
 1. [Introduction to C++ Programming, Input/Output and Operators](https://github.com/mikeguzman/EIF201-Progra-I/blob/master/docs/01_intro/README.md)
-2. Introduction to Classes, Objects and Strings
+2. [Introduction to Classes, Objects and Strings](https://github.com/mikeguzman/EIF201-Progra-I/tree/master/docs/02_objects/README.md)
