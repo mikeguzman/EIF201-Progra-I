@@ -12,8 +12,13 @@ Git (pronunciado "guit"2​) es un software de control de versiones diseñado po
 
 ### Programando en C++
 
-- Instalar las librerías de [GNU C++](gcc.gnu.org/install/binaries.html)
+- Instalar las librerías cd C++
+	- [MinGW](http://www.mingw.org/)
+	- [GNU C++](gcc.gnu.org/install/binaries.html)
 - Editores de código recomendados para este curso
+	- [Microsoft Visual Studio Code](https://code.visualstudio.com/)
+		- [Configuración para Windows]()
+		- [Configuración para Mac](https://code.visualstudio.com/docs/cpp/config-clang-mac)
 	- [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/)
 	- [Clion](https://www.jetbrains.com/clion/) *Gratis con el email @una.cr*
 	- [Netbeans](https://netbeans.org/features/cpp/)

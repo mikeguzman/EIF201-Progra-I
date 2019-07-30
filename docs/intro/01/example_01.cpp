@@ -5,12 +5,10 @@
  *
  *    Description:  My first app to print a line
  *
- *        Version:  1.0
  *        Created:  29/07/2019
- *       Compiler:  g++
  *
  *         Author:  Maikol Guzmán mikeguzman@gmail.com
- *   Organization:  LolaDog Studio
+ *   Organization:  Universidad Nacional de Costa Rica
  *
  * =====================================================================================
  */
@@ -18,7 +16,7 @@
 
 // function main begins program execution
 int main(int argc, const char *argv[]) {
-    std::cout << "Welcome to C++!" << std::endl;  // display message
+    std::cout << "Welcome to the UNA!" << std::endl;  // display message
 
     return 0;  // indicate that program ended successfully
 }  // end function main
