@@ -8,6 +8,5 @@
         - Each function in a program performs a task and may return a value when it completes its task.
         - To define a function, you must specify a return type to indicate the type of the value returned by the function when it completes its task.
         - Return type void indicates that displayMessage will not return any data.
-        - UML Class Diagram for Class GradeBook:
 
-        [cmake]: https://github.com/Falven/cpp-clion-template/raw/master/resources/cmake.png "CMake Sample Results"
+1. ```mifirstclassarg.cpp``` Define class GradeBook with a member function that takes a parameter, create a GradeBook object and call its displayMessage function.
