@@ -78,4 +78,4 @@ fabric.properties
 
 EIF201.code-workspace
 *.DS_Store
-*.v
+*.vscode
