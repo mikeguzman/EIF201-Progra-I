@@ -1,4 +1,12 @@
-# Universidad Nacional de Costa Rica | EIF201 - Programación I
+# Universidad Nacional de Costa Rica
+<a id="top"></a>
+![catch logo](resources/una_logo.jpeg)
+## EIF201 - Programación I
+
+Este curso le da continuidad al curso EIF 200 Fundamentos de Informática, en la enseñanza y aprendizaje de los aspectos básicos del diseño orientado a objetos y su respectiva programación, particularmente usando el lenguaje C++. En este curso el estudiante aplicará técnicas de desarrollo de software.
+
+De esta forma el curso de Programación I profundiza la temática desarrollada en el curso anterior, principalmente introduciendo las relaciones entre clases y objetos, colecciones y persistencia de los datos, los cuales le dan al estudiante una perspectiva más completa de la programación de aplicaciones en el paradigma de orientación a objetos, estableciendo las bases del curso siguiente.
+
 ## Material de referencia
 
 El siguiente material se va a presentar tanto en español como en ingles, y es la guía principal para desarrollar el curso.
