@@ -33,4 +33,5 @@ Porciones de código diseñados para comprobar que el código principal está fu
 
 ---
 
-[Inicio](README.md)
+[Página de Inicio](https://github.com/mikeguzman/EIF201-Progra-I)
+
