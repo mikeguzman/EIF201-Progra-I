@@ -1,7 +1,8 @@
 # Introducción a clases y objetos
 
-Ejemplos de código:
-1. <u>myfirstclass.cpp</u> Define class ```GradeBook``` with a member function ```displayMessage```, create a GradeBook object, and call its ```displayMessage``` function.
+### Ejemplos de códigos básicos
+
+1. [myfirstclass.cpp]() Define class ```GradeBook``` with a member function ```displayMessage```, create a GradeBook object, and call its ```displayMessage``` function.
     - Class ```GradeBook```
         - Before function main can create a GradeBook object, we must tell the compiler what member functions and data members belong to the class. The GradeBook class definition contains a member function called displayMessage that displays a message on the screen.
         - By convention, the name of a user-defined class begins with a capital letter, and for readability.
@@ -9,7 +10,7 @@ Ejemplos de código:
         - Each function in a program performs a task and may return a value when it completes its task.
         - To define a function, you must specify a return type to indicate the type of the value returned by the function when it completes its task.
         - Return type void indicates that displayMessage will not return any data.
-1. <u>mifirstclassarg.cpp</u> Define class GradeBook with a member function that takes a parameter, create a GradeBook object and call its displayMessage function.
+1. **mifirstclassarg.cpp** Define class GradeBook with a member function that takes a parameter, create a GradeBook object and call its displayMessage function.
 
 ---
 
