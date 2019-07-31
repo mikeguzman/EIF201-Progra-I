@@ -1,12 +1,12 @@
 # Clases y objetos
-
 - [Especificaciones de acceso](#especificaciones-de-acceso)
 - [Diagrama de UML](#diagrama-de-uml)
-- [Funciones *GET*, *SET* y de *DATA*](#funciones--get----set--y-de--data-)
-  + [Data-member](#data-member)
-  + [SET members](#set-members)
-  + [GET members](#get-members)
-
+- [Funciones *GET*, *SET* y *DATA*](#funciones--get----set--y--data-)
+  * [Data member](#data-member)
+  * [SET member](#set-member)
+  * [GET member](#get-member)
+  * [Member Function ***displayMessage***](#member-function----displaymessage---)
+  * [Example and UML](#example-and-uml)
 ---
 
 La definición de una clase inicia con la palabra reservada ```class``` seguida del nombre de la clase, por convención el nombre de la clase siempre empieza con mayúscula, cada parabra subsecuente también empieza con mayúscula, ejemplo: ```GradeBook```.
@@ -117,7 +117,7 @@ public:
 
 ### Example and UML
 
-[example_getset.cpp](../examples/03_class/01/example_getset.cpp) Define class GradeBook that contains a courseName data member and member functions to set and get its value; Create and manipulate a GradeBook object with theses functions.
+[example_getset.cpp](../examples/03_class/01/example_getset.cpp) define class GradeBook that contains a courseName data member and member functions to set and get its value; Create and manipulate a GradeBook object with theses functions.
 
 ![myfirstclass uml](../resources/getsetclass_uml.jpg)
 
