@@ -8,7 +8,6 @@ De esta forma el curso de Programación I profundiza la temática desarrollada e
 
 ### Contenido
 
-- [Material de referencia](docs/material-referencia.md)
-- Introducción a la programación en C++
-- Introducción a clases y objetos
-
+1. [Material de referencia](docs/material-referencia.md)
+2. Introducción a la programación en C++
+3. Introducción a clases y objetos
