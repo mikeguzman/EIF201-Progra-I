@@ -31,3 +31,6 @@ Porciones de código diseñados para comprobar que el código principal está fu
 
 - [Catch 2](https://github.com/catchorg/Catch2)
 
+---
+
+[Inicio](README.md)

@@ -6,8 +6,9 @@ Este curso le da continuidad al curso EIF 200 Fundamentos de Informática, en la
 
 De esta forma el curso de Programación I profundiza la temática desarrollada en el curso anterior, principalmente introduciendo las relaciones entre clases y objetos, colecciones y persistencia de los datos, los cuales le dan al estudiante una perspectiva más completa de la programación de aplicaciones en el paradigma de orientación a objetos, estableciendo las bases del curso siguiente.
 
-###Contenido
+### Contenido
 
 - [Material de referencia](docs/material-referencia.md)
 - Introducción a la programación en C++
 - Introducción a clases y objetos
+
