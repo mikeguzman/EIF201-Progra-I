@@ -31,6 +31,22 @@ Porciones de código diseñados para comprobar que el código principal está fu
 
 - [Catch 2](https://github.com/catchorg/Catch2)
 
+## Reglas importantes
+
+- [Normas de programación](http://cppunit.sourceforge.net/cppunit2/doc/coding_guidelines.html) 
+
+## Libro de referencia
+
+![myfirstclass uml](../resources/libro.jpeg) C++ How to Program, Ninth Edition
+
+by [Harvey Deitel](https://learning.oreilly.com/search/?query=author%3A"Harvey Deitel"&sort=relevance&highlight=true), [Paul Deitel](https://learning.oreilly.com/search/?query=author%3A"Paul Deitel"&sort=relevance&highlight=true)
+
+Publisher: [Prentice Hall](https://learning.oreilly.com/library/publisher/prentice-hall/)
+
+Release Date: February 2013
+
+ISBN: 9780133378719
+
 ---
 
 [Página de Inicio](https://github.com/mikeguzman/EIF201-Progra-I)
