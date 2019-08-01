@@ -19,7 +19,7 @@
 
 class Racional {
     // Variables
-    int numerador, denominator;
+    int numerador, denominador;
     // Métodos
     static int calcularMCD(int num, int den);
 
@@ -32,10 +32,14 @@ public:
     static void simplificarFraccion(Racional& fraccion);
     Racional sumFraccion(Racional fraccion);
     std::string obtenerString();
+
     int getNumerador() const;
+
     void setNumerador(int numerador);
-    int getDenominator() const;
-    void setDenominator(int denominator);
+
+    int getDenominador() const;
+
+    void setDenominador(int denominador);
 };
 
 

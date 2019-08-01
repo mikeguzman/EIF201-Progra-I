@@ -21,11 +21,11 @@
 // Constructor Default
 Racional::Racional() {
     setNumerador(0);
-    setDenominator(1);
+    setDenominador(1);
 }
 
 // Constructor Principal
-Racional::Racional(int numerador, int denominator) : numerador(numerador), denominator(denominator) {}
+Racional::Racional(int numerador, int denominador) : numerador(numerador), denominador(denominador) {}
 
 int Racional::calcularMCD(int num, int den) {
     int resultado = 0;
@@ -42,28 +42,27 @@ int Racional::calcularMCD(int num, int den) {
 void Racional::simplificarFraccion(Racional &fraccion) {
     if (fraccion.numerador != 0) {
         // abs = retorna el valor absoluto de un parámetro, es parte de la libreria <math>
-        int numeroMCD = calcularMCD(abs(fraccion.numerador), fraccion.denominator);
+        int numeroMCD = calcularMCD(abs(fraccion.getNumerador()), fraccion.getDenominador());
         int numerador = fraccion.getNumerador() / numeroMCD;
-        int denominador = fraccion.getDenominator() / numeroMCD;
+        int denominador = fraccion.getDenominador() / numeroMCD;
         fraccion.setNumerador(numerador);
-        fraccion.setDenominator(denominador);
+        fraccion.setDenominador(denominador);
     }
-
 }
 
 Racional Racional::sumFraccion(Racional fraccion) {
     Racional resultado;
     resultado.setNumerador(
-            getNumerador() * fraccion.getDenominator() +
-            getDenominator() * fraccion.getNumerador());
-    resultado.setDenominator(getDenominator() * fraccion.getDenominator());
+            getNumerador() * fraccion.getDenominador() +
+            getDenominador() * fraccion.getNumerador());
+    resultado.setDenominador(getDenominador() * fraccion.getDenominador());
     simplificarFraccion(resultado);
     return resultado;
 }
 
 std::string Racional::obtenerString() {
     std::string resultado;
-    resultado = std::to_string(getNumerador()) + "/" + std::to_string(getDenominator());
+    resultado = std::to_string(getNumerador()) + "/" + std::to_string(getDenominador());
     return resultado;
 }
 
@@ -75,11 +74,10 @@ void Racional::setNumerador(int numerador) {
     Racional::numerador = numerador;
 }
 
-int Racional::getDenominator() const {
-    return denominator;
+int Racional::getDenominador() const {
+    return denominador;
 }
 
-void Racional::setDenominator(int denominator) {
-    Racional::denominator = denominator;
+void Racional::setDenominador(int denominador) {
+    Racional::denominador = denominador;
 }
-
