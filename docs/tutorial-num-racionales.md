@@ -10,9 +10,9 @@ El siguiente es el tutorial para poner en práctica el tema [Clases y Objetos](o
 ## Instrucciones
 
 Se necesita implementar un conjunto básico de operaciones sobre fracciones. Una fracción es una representación de un número racional, de la forma:
-$$
-\frac{a}{b}
-$$
+
+![math](https://latex.codecogs.com/svg.latex?\Large&space;\frac{a}{b})
+
 donde *a* y *b* son números enteros. El valor de *b* debe ser diferente de 0.
 
 Detalles:
@@ -25,10 +25,7 @@ Detalles:
 
 Se deberá implementar las siguiente operación aritmética: **Suma**
 
-$$
-\frac{a}{b} + \frac{c}{d} = \frac{(a * d) + (b * c)}{b * d}
-$$
-
+![math](https://latex.codecogs.com/svg.latex?\Large&space;\frac{a}{b} + \frac{c}{d} = \frac{(a * d) + (b * c)}{b * d})
 ## Preguntas generadoras
 
 1. **¿La clase Racional, debe tener todos métodos los mutadores y accesores?**
@@ -46,25 +43,21 @@ $$
 ## Desarrollo
 
 1. Revisar el código del laboratorio en `tutorials\NumerosRacionales`
+
 2. En proyectos de operaciones matemáticas, es recomendable buscar alguna herramienta, calculadora para comparar los resultados. En este caso recomendamos usar [https://www.wolframalpha.com](https://www.wolframalpha.com/) para verifcar los resultados.
+
 3. Definimos nuestra operación de prueba:
 
-$$
-\frac{20}{8} + \frac{10}{4}
-$$
+   ![math](https://latex.codecogs.com/svg.latex?\Large&space;\frac{20}{8} + \frac{10}{4})
 
 4. Evaluamos el resultado y verificado con [https://www.wolframalpha.com](https://www.wolframalpha.com/)
 
-$$
-\frac{20}{8} + \frac{10}{4} = \frac{5}{1}
-$$
+   ![math](https://latex.codecogs.com/svg.latex?\Large&space;\frac{20}{8} + \frac{10}{4} = \frac{5}{1})
 
 5. Diseñamos nuestro diagrama UML a partir de las indicaciones del enunciado, podemos utilizar la herramienta [https://www.lucidchart.com](https://www.lucidchart.com/) para diseñar el diagrama de clases.
 
 > `-` Indicates private
->
 > `+` Indicates public
->
 > `#` Indicates protected
 
 ![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/tutorial_num_raciones_uml.png)
