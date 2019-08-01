@@ -25,7 +25,7 @@ Detalles:
 
 Se deberá implementar las siguiente operación aritmética: **Suma**
 
-![math](https://latex.codecogs.com/svg.latex?\Large&space;\frac{a}{b} + \frac{c}{d} = \frac{(a * d) + (b * c)}{b * d})
+![math](https://latex.codecogs.com/svg.latex?\Large&space;\frac{a}{b}+\frac{c}{d}=\frac{(a*d)+(b*c)}{b*d})
 ## Preguntas generadoras
 
 1. **¿La clase Racional, debe tener todos métodos los mutadores y accesores?**
