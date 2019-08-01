@@ -46,19 +46,19 @@ De acuerdo con el enfoque orientado a objetos para el desarrollo del sistema, pa
 
 En su forma más simple, una clase en UML se dibuja como un rectángulo dividido en hasta tres secciones. La sección superior contiene el nombre de la clase, la sección central contiene los atributos o la información que contiene la clase, y la sección final contiene las operaciones que representan el comportamiento que exhibe la clase. Las secciones de atributos y operaciones son opcionales.
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_class.png)
+![](../resources/uml_class.png)
 
 ### Visibilidad
 
 Una vez que se aplican las características de visibilidad, puede controlar el acceso a atributos, operaciones e incluso clases enteras para aplicar la encapsulación de manera efectiva.
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_visibility.png)
+![](../resources/uml_visibility.png)
 
 #### Pública
 
 La **visibilidad pública** se especifica utilizando el símbolo más (`+`) antes del atributo u operación asociada. Declare público un atributo u operación si desea que cualquier otra clase pueda acceder a él directamente.
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_visibility_public.png)
+![](../resources/uml_visibility_public.png)
 
 > **ATRIBUTOS PÚBLICOS**
 > ¿Tener atributos públicos o no tener atributos públicos? Esa es la pregunta. Muchos diseñadores orientados a objetos se quejan del uso de atributos públicos: abrir los atributos de una clase al resto del sistema es como exponer su casa a cualquier persona fuera de la calle sin requerir que lo consulte con usted antes de ingresar. Existe el mismo potencial de abuso.
@@ -69,7 +69,7 @@ La **visibilidad pública** se especifica utilizando el símbolo más (`+`) ante
 
 Los atributos y las operaciones `protected` se especifican utilizando el símbolo hash (`#`) y son más visibles para el resto de su sistema que los atributos y operaciones privadas, pero son menos visibles que los públicos. Se puede acceder a los elementos protegidos declarados en las clases mediante métodos que son parte de su clase y también mediante métodos que se declaran en cualquier clase que herede de su clase. Una clase que no hereda de su clase no puede acceder a los elementos protegidos, esté en el mismo paquete o no.
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_visibility_protected.png)
+![](../resources/uml_visibility_protected.png)
 
 #### Paquete
 
@@ -77,7 +77,7 @@ La visibilidad del paquete, especificada con una (`~`), cuando se aplica a atrib
 
 La regla es bastante simple: si agrega un atributo u operación que se declara con visibilidad de paquete a su clase, entonces cualquier clase en el mismo paquete puede acceder directamente a ese atributo u operación. Las clases fuera del paquete no pueden acceder a los atributos u operaciones protegidos, incluso si se trata de una clase heredada. En la práctica, la visibilidad del paquete es más útil cuando desea declarar una colección de métodos y atributos en sus clases que solo se pueden usar dentro de su paquete.
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_visibility_package.png)
+![](../resources/uml_visibility_package.png)
 
 #### Privado
 
@@ -85,16 +85,17 @@ La visibilidad privada es el tipo de clasificación de visibilidad más restring
 
 La visibilidad privada es más útil si tiene un atributo u operación del que no desea que dependa ninguna otra parte del sistema. Este podría ser el caso si tiene la intención de cambiar un atributo u operación más adelante, pero no desea que se modifiquen otras clases con acceso a ese elemento.
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_visibility_private.png)
+![](../resources/uml_visibility_private.png)
 
 ### Atributos de la clase
 
 Los atributos de una clase son las piezas de información que representan el estado de un objeto. Estos atributos se pueden representar en un diagrama de clase, ya sea colocándolos dentro de su sección del cuadro de clase, conocidos como atributos en línea, o por asociación con otra clase.
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_class_attributes.png)
+![](../resources/uml_class_attributes.png)
 
 ### Comportamientos de una clase
 
 Las operaciones de una clase describen lo que una clase puede hacer pero no necesariamente cómo lo hará. Una operación es más como una promesa o un contrato mínimo que declara que una clase contendrá un comportamiento que hace lo que la operación dice que hará. La recopilación de todas las operaciones que contiene una clase debe abarcar totalmente todo el comportamiento que contiene la clase, incluido todo el trabajo que mantiene los atributos de la clase y posiblemente algún comportamiento adicional que esté estrechamente asociado con la clase.
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_class_operations.png)
+![](../resources/uml_class_operations.png)
+
