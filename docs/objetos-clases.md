@@ -1,4 +1,5 @@
 # Clases y objetos
+
 - [Modificadores de acceso](#modificadores-de-acceso)
 - [Diagrama de UML](#diagrama-de-uml)
 - [Funciones *GET*, *SET* y *member*](#funciones--get----set--y--member-)
@@ -22,7 +23,12 @@
     + [GradeBook.h](#gradebookh-1)
     + [GradeBook.cpp](#gradebookcpp-1)
     + [MainAppInterface.cpp](#mainappinterfacecpp)
-    + [Diagrama](#diagrama)
+    + [Diagrama de interfaces](#diagrama-de-interfaces)
+- [Validación de datos con funciones ***SET***](#validaci-n-de-datos-con-funciones----set---)
+  * [Ejemplo de validaciones en los mátodos *SET*](#ejemplo-de-validaciones-en-los-m-todos--set-)
+    + [GradeBook.h](#gradebookh-2)
+    + [GradeBook.cpp](#gradebookcpp-2)
+    + [MainAppValidations.cpp](#mainappvalidationscpp)
 
 ---
 
