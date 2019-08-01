@@ -35,7 +35,14 @@ Porciones de código diseñados para comprobar que el código principal está fu
 
 - [Normas de programación](http://cppunit.sourceforge.net/cppunit2/doc/coding_guidelines.html) 
 
-## Libro de referencia
+## Herramientas importantes
+
+- UML
+  - [https://www.lucidchart.com](https://www.lucidchart.com/)
+- Sites
+  - [https://www.wolframalpha.com](https://www.wolframalpha.com/) (Para revisar cálculos matemáticos y otras cosas)
+
+## Libros y información de referencia
 
 ![myfirstclass uml](../resources/libro.jpeg) C++ How to Program, Ninth Edition
 
