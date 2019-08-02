@@ -13,6 +13,15 @@
     + [Privado](#privado)
   * [Atributos de la clase](#atributos-de-la-clase)
   * [Comportamientos de una clase](#comportamientos-de-una-clase)
+  * [Relaciones de clase](#relaciones-de-clase)
+    + [Dependencia](#dependencia)
+    + [Asociación](#asociaci-n)
+    + [Agregación](#agregaci-n)
+  * [Composición](#composici-n)
+    + [Generalización (*Herencia*)](#generalizaci-n---herencia--)
+  * [Clases Abstractas](#clases-abstractas)
+    + [Interfaces](#interfaces)
+    + [Plantillas](#plantillas)
 
 El lenguaje de modelado unificado (UML) es el lenguaje de modelado estándar para el desarrollo de software y sistemas.
 
