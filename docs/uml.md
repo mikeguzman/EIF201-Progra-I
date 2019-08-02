@@ -144,7 +144,7 @@ La composición es una relación aún más fuerte que la agregación, aunque fun
 
 La generalización y la herencia se utilizan para describir una clase que es un tipo de otra clase. Los términos tienen un tipo y se han convertido en una forma aceptada de decidir si una relación entre dos clases es agregación o generalización desde hace muchos años. Si te encuentras declarando que una clase tiene una parte que es un objeto de otra clase, entonces la relación probablemente sea de asociación, agregación o composición. Si te encuentras diciendo que la clase es un tipo de otra clase, entonces podrías considerar usar la generalización en su lugar.
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_class_relations_generalizacion.png)
+![](../resources/uml_class_relations_generalizacion.png)
 
 #### Herencia Múltiple
 
