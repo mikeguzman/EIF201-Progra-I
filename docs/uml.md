@@ -172,7 +172,7 @@ Una interfaz es una colección de operaciones que no tienen implementaciones de 
 
 Las plantillas son una característica avanzada pero útil de la orientación a objetos. Una plantilla (o clase parametrizada, como a veces se las denomina) es útil cuando desea posponer la decisión sobre con qué clases trabajará una clase. Cuando declara una plantilla, es similar a declarar: “Sé que esta clase tendrá que funcionar con otras clases, pero no sé o necesariamente me importa lo que esas clases realmente terminan siendo. "
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_class_relations_templates.png)
+![](../resources/uml_class_relations_templates.png)
 
 ------
 
