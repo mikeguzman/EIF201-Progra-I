@@ -27,18 +27,20 @@ Racional::Racional() {
 // Constructor Principal
 Racional::Racional(int numerador, int denominador) : numerador(numerador), denominador(denominador) {}
 
+// Función de prototypo
 int Racional::calcularMCD(int num, int den) {
     int resultado = 0;
 
     if (den == 0) {
         resultado = num;
     } else {
-        resultado = calcularMCD(den, num % den);
+        resultado = calcularMCD(den, num % den); // Función de recursividad (revisar el doc)
     }
 
     return resultado;
 }
 
+// Función referencias y parámetros de referencia
 void Racional::simplificarFraccion(Racional &fraccion) {
     if (fraccion.numerador != 0) {
         // abs = retorna el valor absoluto de un parámetro, es parte de la libreria <math>
