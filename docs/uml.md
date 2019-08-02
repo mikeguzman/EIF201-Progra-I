@@ -124,6 +124,56 @@ Una dependencia entre dos clases declara que una clase necesita saber acerca de 
 
 Aunque la dependencia simplemente permite que una clase use objetos de otra clase, asociaci una clase funciona con un objeto de otra clase, entonces la relación entre esas clases es un gran candidato para la asociación en lugar de solo una dependencia.
 
+![](../resources/uml_class_relations_association.png)
+
+#### Agregación
+
+La agregación es realmente solo una versión más fuerte de asociación y se usa para indicar que una clase realmente posee pero puede compartir objetos de otra clase.
+
+La agregación se muestra usando una punta de flecha de diamante vacía al lado de la clase propietaria.
+
+![](../resources/uml_class_relations_agregacion.png)
+
+#### Composición
+
+La composición es una relación aún más fuerte que la agregación, aunque funcionan de manera muy similar. La composición se muestra usando una punta de flecha de diamante cerrada o llena.
+
+![](../resources/uml_class_relations_composition.png)
+
+#### Generalización (Herencia)
+
+La generalización y la herencia se utilizan para describir una clase que es un tipo de otra clase. Los términos tienen un tipo y se han convertido en una forma aceptada de decidir si una relación entre dos clases es agregación o generalización desde hace muchos años. Si te encuentras declarando que una clase tiene una parte que es un objeto de otra clase, entonces la relación probablemente sea de asociación, agregación o composición. Si te encuentras diciendo que la clase es un tipo de otra clase, entonces podrías considerar usar la generalización en su lugar.
+
+![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_class_relations_generalizacion.png)
+
+#### Herencia Múltiple
+
+La herencia múltiple, o la generalización múltiple en la terminología oficial de UML, ocurre cuando una clase hereda de dos o más clases primarias.
+
+![](../resources/uml_class_relations_herencia_m.png)
+
+### Clases Abstractas
+
+A veces, cuando usa la generalización para declarar una clase reutilizable y genérica, no podrá implementar todo el comportamiento que necesita la clase general. Si está implementando una clase de Tienda para almacenar y recuperar los artículos del CMS, es posible que desee indicar que no se sabe exactamente cómo una Tienda almacena y recupera los artículos en este momento y debe dejarse en subclases para decidir.
+
+![](../resources/uml_class_relations_abstract.png)
+
+### Interfaces
+
+Si desea declarar los métodos que deberían implementar las clases concretas, pero no utilizar la abstracción ya que solo tiene una relación de herencia (si está codificando en Java), entonces las interfaces podrían ser la respuesta.
+
+Una interfaz es una colección de operaciones que no tienen implementaciones de métodos correspondientes, muy similar a una clase abstracta que contiene solo métodos abstractos. En algunos lenguajes de implementación de software, como C ++, las interfaces se implementan como clases abstractas que no contienen implementaciones de operaciones. En lenguajes más nuevos, como Java y C #, una interfaz tiene su propia construcción especial.
+
+![](../resources/uml_class_relations_interface.png)
+
+![](../resources/uml_class_relations_interface_2.png)
+
+### Plantillas
+
+Las plantillas son una característica avanzada pero útil de la orientación a objetos. Una plantilla (o clase parametrizada, como a veces se las denomina) es útil cuando desea posponer la decisión sobre con qué clases trabajará una clase. Cuando declara una plantilla, es similar a declarar: “Sé que esta clase tendrá que funcionar con otras clases, pero no sé o necesariamente me importa lo que esas clases realmente terminan siendo. "
+
+![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/uml_class_relations_templates.png)
+
 ------
 
 [Página de Inicio](https://github.com/mikeguzman/EIF201-Progra-I)
