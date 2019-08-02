@@ -60,7 +60,7 @@ Se deberá implementar las siguiente operación aritmética: **Suma**
 > `+` Indicates public
 > `#` Indicates protected
 
-![](/Users/mguzmana/Documents/EIF201-Progra-I/resources/tutorial_num_raciones_uml.png)
+![](https://www.lucidchart.com/publicSegments/view/f415808d-d9eb-437c-befe-1f0867081272/image.png)
 
 6. Creamos nuestro proyecto C++ en el IDE correspondiente, y agregamos las clases necesarias definidas en el diagrama de clases.
 

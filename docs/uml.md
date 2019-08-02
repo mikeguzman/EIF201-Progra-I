@@ -99,7 +99,21 @@ Las operaciones de una clase describen lo que una clase puede hacer pero no nece
 
 ![](../resources/uml_class_operations.png)
 
+### Relaciones de clase
 
+La fuerza de una relación de clase se basa en cuán dependientes son las clases involucradas en la relación entre sí. Se dice que dos clases que dependen fuertemente entre sí están estrechamente acopladas; los cambios a una clase probablemente afectarán a la otra clase. **El acoplamiento apretado suele ser, pero no siempre, algo malo; por lo tanto, cuanto más fuerte sea la relación, más cuidadoso debes ser.**
+
+![](../resources/uml_class_relations.png)
+
+#### Dependencia
+
+Una dependencia entre dos clases declara que una clase necesita saber acerca de otra clase para usar objetos de esa clase. Si la clase `UserInterface` del CMS necesitara trabajar con el objeto de una clase `BlogEntry`, entonces esta dependencia se dibujaría usando la flecha de dependencia.
+
+![](../resources/uml_class_relations_dependency.png)
+
+#### Asociación
+
+Aunque la dependencia simplemente permite que una clase use objetos de otra clase, asociaci una clase funciona con un objeto de otra clase, entonces la relación entre esas clases es un gran candidato para la asociación en lugar de solo una dependencia.
 
 ------
 
