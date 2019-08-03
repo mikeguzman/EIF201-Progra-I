@@ -8,6 +8,12 @@ En el siguiente enlace, podrá ver en detalle el video tutorial de este laborato
 
 [Laboratorio Números Racionales](https://youtu.be/slXpWRgWVUY)
 
+## Código fuente
+
+El código fuente de este tutorial resuelto:
+
+[`tutorials/NumerosRacionales`](https://github.com/mikeguzman/EIF201-Progra-I/tree/master/tutorials/NumerosRacionales)
+
 ## Contenido a evaluar
 
 - Encapsulamiento y abstracción
