@@ -6,7 +6,7 @@ El siguiente es el tutorial para poner en práctica el tema [Clases y Objetos](o
 
 En el siguiente enlace, podrá ver en detalle el video tutorial de este laboratorio.
 
-[Laboratorio Números Racionales](https://youtu.be/UFVZ6AzVVWU)
+[Laboratorio Números Racionales](https://youtu.be/slXpWRgWVUY)
 
 ## Contenido a evaluar
 
