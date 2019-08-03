@@ -2,6 +2,12 @@
 
 El siguiente es el tutorial para poner en práctica el tema [Clases y Objetos](objetos-clases.md).
 
+## Video de guía
+
+En el siguiente enlace, podrá ver en detalle el video tutorial de este laboratorio.
+
+[Laboratorio Números Racionales](https://youtu.be/UFVZ6AzVVWU)
+
 ## Contenido a evaluar
 
 - Encapsulamiento y abstracción

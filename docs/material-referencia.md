@@ -41,6 +41,8 @@ Porciones de código diseñados para comprobar que el código principal está fu
   - [https://www.lucidchart.com](https://www.lucidchart.com/)
 - Sites
   - [https://www.wolframalpha.com](https://www.wolframalpha.com/) (Para revisar cálculos matemáticos y otras cosas)
+- Clion
+  - https://www.jetbrains.com/help/clion/generatinng-defenitions.html
 
 ## Libros y información de referencia
 
