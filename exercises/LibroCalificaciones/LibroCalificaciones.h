@@ -18,7 +18,25 @@
 #define LIBROCALIFICACIONES_LIBROCALIFICACIONES_H
 
 
+#include <string>
+
 class LibroCalificaciones {
+    std::string nombreCurso;
+    int nota;
+    std::string obtenerRangoLetra();
+
+public:
+    LibroCalificaciones();
+    LibroCalificaciones(const std::string &nombreCurso, int nota);
+
+    // Métodos
+    std::string obtenerMensaje();
+
+    // Get / Set
+    const std::string &getNombreCurso() const;
+    void setNombreCurso(const std::string &nombreCurso);
+    int getNota() const;
+    void setNota(int nota);
 
 };
 
