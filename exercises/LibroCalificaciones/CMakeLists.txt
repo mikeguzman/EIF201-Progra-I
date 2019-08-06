@@ -3,6 +3,6 @@ project(LibroCalificaciones)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp LibroCalificaciones.cpp LibroCalificaciones.h)
+set(SOURCE_FILES main.cpp LibroCalificaciones.cpp LibroCalificaciones.h )
 
-add_executable(NumerosRacionales ${SOURCE_FILES})
+add_executable(LibroCalificaciones ${SOURCE_FILES})
