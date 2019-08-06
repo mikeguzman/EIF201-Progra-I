@@ -9,7 +9,7 @@ De esta forma el curso de Programación I profundiza la temática desarrollada e
 ### Contenido
 
 1. [Material de referencia](docs/material-referencia.md)
-2. [Video Tutoriales](video-tutoriales.md)
+2. [Video Tutoriales](docs/video-tutoriales.md)
 3. [Introducción a la programación en C++](docs/intro-progra.md)
 4. [Unified Modeling Language (UML)](docs/uml.md)
 5. [Funciones](docs/functions.md)
