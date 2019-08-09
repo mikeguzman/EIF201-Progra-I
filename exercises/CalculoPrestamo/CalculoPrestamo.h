@@ -6,9 +6,8 @@
 #define CALCULOPRESTAMO_CALCULOPRESTAMO_H
 
 
-class CalculoPrestamo {
-
-};
+#include <cstdint>
+#include <string>
 
 
 #endif //CALCULOPRESTAMO_CALCULOPRESTAMO_H
