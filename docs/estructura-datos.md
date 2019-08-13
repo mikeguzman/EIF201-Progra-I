@@ -235,11 +235,95 @@ void modifyElement(int e) {
 
 ### Ordenar
 
-La clasificación de datos (su ubicación en orden ascendente o descendente) es una de las aplicaciones informáticas más importantes. Un banco clasifica todos los cheques por número de cuenta para que pueda preparar extractos bancarios individuales al final de cada mes. Las compañías telefónicas clasifican sus directorios telefónicos por apellido, y dentro de todas las entradas con el mismo apellido, clasifíquelos por nombre, para que sea más fácil encontrar números telefónicos. 
+La clasificación de datos (su ubicación en orden ascendente o descendente) es una de las aplicaciones informáticas más importantes. Un banco clasifica todos los cheques por número de cuenta para que pueda preparar extractos bancarios individuales al final de cada mes. Las compañías telefónicas clasifican sus directorios telefónicos por apellido, y dentro de todas las entradas con el mismo apellido, clasifíquelos por nombre, para que sea más fácil encontrar números telefónicos.
+
+```c++
+#include <iomanip>
+#include <iostream>
+
+int main(int argc, const char *argv[]) {
+    const int arraySize = 10;
+    int data[arraySize] = {34, 56, 4, 10, 77, 51, 93, 30, 5, 52};
+    int insert;  // temporary variable to old element to insert
+
+    std::cout << "Unsorted array:\n";
+
+    for (int i = 0; i < arraySize; ++i) {
+        std::cout << std::setw(4) << data[i];
+    }
+
+    // insertion sort
+    for (int next = 1; next < arraySize; ++next) {
+        insert = data[next];  // store the value in the current element
+
+        int moveItem = next;  // initialise location to place element
+
+        // search for the location in which to put the current element
+        while ((moveItem > 0) && (data[moveItem - 1] > insert)) {
+            // shift element one slot to the right
+            data[moveItem] = data[moveItem - 1];
+            moveItem--;
+        }
+
+        data[moveItem] = insert;  // place inserted element into array
+    }
+
+    std::cout << "\nSorted array:\n";
+
+    for (int i = 0; i < arraySize; ++i) {
+        std::cout << std::setw(4) << data[i];
+    }
+
+    std::cout << std::endl;
+
+    return 0;
+}
+```
 
 ### Buscar
 
 A menudo puede ser necesario determinar si arreglo contiene un valor que coincide con un cierto valor clave. El proceso de encontrar un elemento particular de un arreglo se llama búsqueda. 
+
+```c++
+#include <iostream>
+
+int linearSearch(const int[], int, int);
+
+int main(int argc, const char *argv[]) {
+    const int arraySize = 100;
+    int a[arraySize];
+    int searchKey;
+
+    for (int i = 0; i < arraySize; ++i) {
+        a[i] = 2 * i;
+    }
+
+    std::cout << "Enter integer search key: ";
+    std::cin >> searchKey;
+
+    // attempt to locate searchKey in array a
+    int element = linearSearch(a, searchKey, arraySize);
+
+    // display results
+    if (element != -1) {
+        std::cout << "Found value in element " << element << std::endl;
+    } else {
+        std::cout << "Value not found" << std::endl;
+    }
+
+    return 0;
+}
+// compare key to every element of array until location is found or until end of
+// array is reached; return subscript of element if key is found or -1 if key is
+// not found
+int linearSearch(const int array[], int key, int sizeOfArray) {
+    for (int i = 0; i < sizeOfArray; ++i) {
+        if (array[i] == key) { return i; }
+    }
+
+    return -1;
+}
+```
 
 ### Demostrando las funciones `sort`  y `binary_search`
 
