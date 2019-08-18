@@ -7,7 +7,15 @@
 
 
 class Punteros {
+    static int valorAlCubo(int);
+    static int valorAlCuboReferencia(int *);
 
+public:
+    Punteros();
+
+    static void imprimirDatosPuntero(int valor);
+    static void imprimirDatosPunteroPorValor(int valor);
+    static void imprimirDatosPunteroPorReferencia(int valor);
 };
 
 
