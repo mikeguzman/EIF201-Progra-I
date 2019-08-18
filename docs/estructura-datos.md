@@ -334,3 +334,13 @@ int linearSearch(const int array[], int key, int sizeOfArray) {
 ![](../resources/matrices.png)
 
 ![](../resources/matrices-1.png)
+
+## Vectores
+
+`Vector` parte de la Biblioteca estándar de C ++, que es similar a los arreglos, pero admite el cambio de tamaño dinámico. 
+
+​	![](../resources/vector.png)
+
+![](../resources/vector1.png)	![](../resources/vector2.png)
+
+![](../resources/vector3.png)
