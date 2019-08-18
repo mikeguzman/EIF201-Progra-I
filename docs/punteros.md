@@ -127,3 +127,87 @@ int main()
 } 
 ```
 
+## Usar `const` con punteros
+
+`const`  permite informar al compilador que el **valor de una variable en particular no debe modificarse**. Existen muchas posibilidades para usar (o no usar) const con parámetros de función, entonces, ¿cómo elegir el más apropiado? El principio del menor privilegio es la respuesta.
+
+### Puntero no constante a datos no constantes
+
+El puntero no constante otorga a los datos no constantes el mayor acceso: los datos se pueden modificar a través del puntero desreferenciado y el puntero se puede modificar para apuntar a otros datos.
+
+```c++
+int * countPtr
+```
+
+### Puntero no constante a datos constantes
+
+Un puntero que se puede modificar para apuntar a cualquier dato del tipo apropiado, pero los datos a los que apunta no pueden modificarse a través de ese puntero.
+
+Tal puntero podría usarse para recibir un argumento de un arreglo incorporado a una función que debería poder leer los elementos, **pero no modificarlos**. Cualquier intento de modificar los datos en la función da como resultado un error de compilación. La declaración para dicho puntero coloca constante a la izquierda del tipo de puntero.
+
+```c++
+const int* countPtr;
+```
+
+La declaración se lee de derecha a izquierda como "`countPtr` es un puntero a una constante entera" o más precisamente, "`countPtr` es un puntero no constante a una constante entera".
+
+```c++
+void f(const int *);
+
+int main(int argc, const char *argv[]) {
+    int y;
+
+    f(&y);
+
+    return 0;
+}
+// xPtr cannot modify the value of constant variable to which it points
+void f(const int *xPtr) {
+    *xPtr = 100;  // error: cannot modify a const object
+}
+```
+
+### Puntero constante a datos no constantes
+
+Siempre apunta a la misma ubicación de memoria, y los datos en esa ubicación se pueden modificar a través del puntero.
+
+Los punteros que se declaran constantes deben inicializarse cuando se declaran, pero si el puntero es un parámetro de función, se inicializa con el puntero que se pasa a la función.
+
+```c++
+int main(int argc, const char* argv[]) {
+    int x, y;
+
+    // ptr is a constant pointer to an integer that can be modified through ptr,
+    // but ptr always points to the same memory location.
+    int* const ptr = &x;
+
+    *ptr = 7;  // allowed: *ptr is not const
+    ptr = &y;  // error: ptr is const; cannot assign it to a new address
+    return 0;
+}
+```
+
+### Puntero constante a datos constantes
+
+Dicho puntero siempre apunta a la misma ubicación de memoria, y los datos en esa ubicación no se pueden modificar a través del puntero.
+
+Así es como se debe pasar un arreglo incorporada a una función que solo lee del arreglo, utilizando la notación de subíndice del arreglo, y no la modifica.
+
+```c++
+int main(int argc, const char *argv[]) {
+    int x = 5, y;
+
+    // ptr is a constant pointer to a constant integer.
+    // ptr always points to the same location; the integer at that location
+    // cannot be modified
+    const int *const ptr = &x;
+
+    std::cout << *ptr << std::endl;
+
+    *ptr = 7;  // error: *ptr is const; cannot assign new value
+    ptr = &y;  // error: ptr is const; cannot assign new address.
+
+    return 0;
+}
+```
+
