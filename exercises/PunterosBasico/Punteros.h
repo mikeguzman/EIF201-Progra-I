@@ -1,21 +1,34 @@
-//
-// Created by Maikol Guzman  on 2019-08-18.
-//
+/*
+ * =====================================================================================
+ *
+ *       Filename:  Punteros.h
+ *
+ *    Description:  Clase principal para Punteros
+ *
+ *        Created:  2019-08-18
+ *
+ *         Author:  Maikol Guzman Alan mikeguzman@gmail.com
+ *   Organization:  Universidad Nacional de Costa Rica
+ *
+ * =====================================================================================
+ */
 
 #ifndef PUNTEROSBASICO_PUNTEROS_H
 #define PUNTEROSBASICO_PUNTEROS_H
 
 
 class Punteros {
-    static int valorAlCubo(int);
-    static int valorAlCuboReferencia(int *);
+    static int numeroAlCuboValor(int);
+    static int numeroAlCuboPuntero(int *);
+    static int numeroAlCuboReferencia(int &);
 
 public:
     Punteros();
 
-    static void imprimirDatosPuntero(int valor);
-    static void imprimirDatosPunteroPorValor(int valor);
-    static void imprimirDatosPunteroPorReferencia(int valor);
+    static void imprimirDatosPuntero();
+    static void imprimirCalculoAlCuboReferenciaValor();
+    static void imprimirCalculoAlCuboReferenciaPuntero();
+    static void imprimirCalculoAlCuboReferenciaReferencia();
 };
 
 

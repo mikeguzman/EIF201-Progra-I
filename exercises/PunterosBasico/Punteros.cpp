@@ -1,57 +1,98 @@
-//
-// Created by Maikol Guzman  on 2019-08-18.
-//
+/*
+ * =====================================================================================
+ *
+ *       Filename:  Punteros.cpp
+ *
+ *    Description:  Clase que implementa los métodos de los punteros
+ *
+ *        Created:  2019-08-19
+ *
+ *         Author:  Maikol Guzman Alan mikeguzman@gmail.com
+ *   Organization:  Universidad Nacional de Costa Rica
+ *
+ * =====================================================================================
+ */
+
 
 #include <iostream>
 #include "Punteros.h"
 
 Punteros::Punteros() = default;
 
-int Punteros::valorAlCubo(int valor) {
-    valor = valor * valor * valor;
-    return valor;
+int Punteros::numeroAlCuboValor(int numero) {
+    numero = numero * numero * numero;
+    return numero;
 }
 
-int Punteros::valorAlCuboReferencia(int *valorPtr) {
-    *valorPtr = *valorPtr * *valorPtr * *valorPtr;
-    return *valorPtr;
+int Punteros::numeroAlCuboPuntero(int *numeroPtr) {
+    *numeroPtr = *numeroPtr * *numeroPtr * *numeroPtr;
+    return *numeroPtr;
 }
 
-void Punteros::imprimirDatosPuntero(int valor) {
-    int *valorPtr = nullptr;
+int Punteros::numeroAlCuboReferencia(int& numeroPtr) {
+    numeroPtr = numeroPtr * numeroPtr * numeroPtr;
+    return numeroPtr;
+}
 
-    valorPtr = &valor;
+void Punteros::imprimirDatosPuntero() {
+    int numero = 0;
+    int *numeroPtr = nullptr;
 
-    std::cout << "Imprime datos básicos de los punteros ____________________\n"
+    numero = 7;
+    numeroPtr = &numero;
+
+    std::cout << "Imprime datos básicos de los punteros ____________________"
               << std::endl;
 
-    std::cout << "La dirección de &valor es " << &valor << "\nEl valor de edadPtr es "
-              << valorPtr;
+    std::cout << "\tLa dirección en memoria de [ &numero ] es " << &numero << "\n\tEl valor de [ numeroPtr ] es "
+              << numeroPtr << std::endl;
 
-    std::cout << "\nEl valor de edad es: " << valor << "\nEl valor de *edadPtr es "
-              << *valorPtr;
+    std::cout << "\tEl valor de la variabnle [ numero ]: " << numero << "\n\tEl valor de [ *numeroPtr ] es "
+              << *numeroPtr << std::endl;
 
-    std::cout << "\nSe muestra que * y & son inversos de cada uno."
-              << "\n&*edadPtr = " << &*valorPtr << "\n*&edadPtr = " << *&valorPtr
+    std::cout << "\tSe muestra que [ * ] y [ & ] son inversos de cada uno.\n"
+              << "\t&*edadPtr = " << &*numeroPtr << "\n\t*&edadPtr = " << *&numeroPtr
               << std::endl;
 }
 
-void Punteros::imprimirDatosPunteroPorValor(int valor) {
-    std::cout << "\nImprime datos de los punteros que se pasan por valor ____________________\n"
+void Punteros::imprimirCalculoAlCuboReferenciaValor() {
+    int numero = 0;
+
+    numero = 5;
+
+    std::cout << "\nImprime datos de los punteros que se pasan por Valor ____________________"
               << std::endl;
-    std::cout << "El valor original de la variable 'valor2' es " << valor;
+    std::cout << "\tEl valor original de la variable [ numero ] es " << numero;
 
-    valor = valorAlCubo(valor);
+    numero = numeroAlCuboValor(numero);
 
-    std::cout << "\nEl resulado al cubo es: " << valor << std::endl;
+    std::cout << "\n\tEl resulado al cubo de la variable [ numero ] es: " << numero << std::endl;
 }
 
-void Punteros::imprimirDatosPunteroPorReferencia(int valor) {
-    std::cout << "\nImprime datos de los punteros que se pasan por Referencia ____________________\n"
+void Punteros::imprimirCalculoAlCuboReferenciaPuntero() {
+    int numero = 0;
+
+    numero = 5;
+
+    std::cout << "\nImprime datos de los punteros que se pasan por Puntero ____________________"
               << std::endl;
-    std::cout << "El valor original de la variable 'valor3' es " << valor;
+    std::cout << "\tEl valor original de la variable [ numero ] es " << numero;
 
-    valor = valorAlCuboReferencia(&valor);
+    numero = numeroAlCuboPuntero(&numero);
 
-    std::cout << "\nEl resulado al cubo es: " << valor << std::endl;
+    std::cout << "\n\tEl resulado al cubo de la variable [ numero ] es: " << numero << std::endl;
+}
+
+void Punteros::imprimirCalculoAlCuboReferenciaReferencia() {
+    int numero = 0;
+
+    numero = 5;
+
+    std::cout << "\nImprime datos de los punteros que se pasan por Referencia ____________________"
+              << std::endl;
+    std::cout << "\tEl valor original de la variable [ numero ] es " << numero;
+
+    numero = numeroAlCuboReferencia(numero);
+
+    std::cout << "\n\tEl resulado al cubo de la variable [ numero ] es: " << numero << std::endl;
 }
