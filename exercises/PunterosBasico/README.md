@@ -1,4 +1,4 @@
-# Laboratorio 4 -Punteros Básicos- 
+# Ejercicio -Punteros Básicos- 
 
 El siguiente ejercicio es para desarrollar los conocimientos en:
 
