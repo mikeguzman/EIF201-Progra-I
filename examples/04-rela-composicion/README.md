@@ -17,3 +17,8 @@ En una relación de composición, el objeto es responsable de la existencia de l
 
 La parte no sabe acerca de la existencia del todo. Su corazón opera felizmente sin darse cuenta de que es parte de una estructura más grande. Llamamos a esto una **relación unidireccional**, porque el cuerpo sabe sobre el corazón, pero no al revés.
 
+## Ejemplo
+
+Muchos juegos y simulaciones tienen animaciones u objetos que se mueven alrededor de un tablero, mapa o pantalla. Una cosa que todas estas animaciones / objetos tienen en común es que todas tienen una ubicación o posición. En este ejemplo, vamos a crear una clase de animación que use una clase de punto para mantener la ubicación de la criatura.
+
+Primero, diseñemos la clase de punto. Nuestra animación vivirá en un mundo 2d, por lo que nuestra clase de puntos tendrá 2 dimensiones, X e Y. Asumiremos que el mundo está formado por cuadrados discretos, por lo que estas dimensiones siempre serán números enteros.
