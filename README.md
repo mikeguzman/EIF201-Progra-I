@@ -17,4 +17,5 @@ De esta forma el curso de Programación I profundiza la temática desarrollada e
    - [Tutorial -Clase Racional-](docs/tutorial-num-racionales.md)
 7. [Estructura de Datos](docs/estructura-datos.md)
 8. [Punteros](docs/punteros.md)
+9. [Relaciones de Objetos](docs/relaciones-objeto.md)
 
