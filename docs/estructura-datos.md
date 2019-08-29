@@ -344,3 +344,7 @@ int linearSearch(const int array[], int key, int sizeOfArray) {
 ![](../resources/vector1.png)	![](../resources/vector2.png)
 
 ![](../resources/vector3.png)
+
+------
+
+[Página de Inicio](https://github.com/mikeguzman/EIF201-Progra-I)

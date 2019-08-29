@@ -37,3 +37,9 @@ En este caso, el maestro se crea independientemente del departamento y luego se 
 
 - Por lo general, use miembros punteros o de referencia que apuntan o hacen referencia a objetos que viven fuera del alcance de la clase agregada
 - No nos hacemos responsables de crear / destruir piezas
+
+------
+
+[Relaciones de Objetos](../../docs/relaciones-objeto.md)
+
+[Página de Inicio](https://github.com/mikeguzman/EIF201-Progra-I)
