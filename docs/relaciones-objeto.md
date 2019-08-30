@@ -29,7 +29,9 @@ Hay muchos tipos diferentes de relaciones que dos objetos pueden tener en la vid
       };
       ```
 
-  - [Asociación Indirecta](../examples/04-rela-asociacion-simple/)
+  - Asociación Indirecta
+
+    - 
 
 ------
 
