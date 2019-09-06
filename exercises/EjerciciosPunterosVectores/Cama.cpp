@@ -9,7 +9,6 @@ Cama::Cama() {}
 Cama::Cama(const std::string &codigo, bool estado) : codigo(codigo), estado(estado) {}
 
 Cama::~Cama() {
-
 }
 
 const std::string &Cama::getCodigo() const {

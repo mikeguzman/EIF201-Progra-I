@@ -29,6 +29,10 @@ public:
 
     void agregarCama(Cama*);
 
+    void eliminarCama(Cama*);
+
+    void eliminarTodasLasCamas();
+
     char getId() const;
 
     void setId(char id);

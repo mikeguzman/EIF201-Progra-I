@@ -22,11 +22,12 @@ int main() {
     std::cout << pabellon1->toString() << std::endl;
     std::cout << pabellon2->toString() << std::endl;
 
-    // Libera la memoria
-    for (int cont=0; cont<pabellon1->getCantidad(); cont++) {
-        delete pabellon1->obtenerCama(cont);
-    }
+    // Elimina cama2 de pabellon1
+    pabellon1->eliminarCama(cama2);
+    std::cout << pabellon1->toString() << std::endl;
 
+    // Elimina todas las camas de pabellon2
+    pabellon2->eliminarTodasLasCamas();
     std::cout << pabellon2->toString() << std::endl;
 
     delete pabellon1;

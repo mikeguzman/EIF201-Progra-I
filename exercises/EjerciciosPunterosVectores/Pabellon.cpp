@@ -25,6 +25,22 @@ void Pabellon::agregarCama(Cama *_cama) {
     }
 }
 
+void Pabellon::eliminarCama(Cama *_cama) {
+    if (cantidad < tamano) {
+        delete _cama;
+        cantidad--;
+    }
+}
+
+void Pabellon::eliminarTodasLasCamas() {
+
+    for (int cont=0; cont<cantidad; cont++) {
+        delete cama[cont];
+    }
+
+    cantidad = 0;
+}
+
 char Pabellon::getId() const {
     return id;
 }
