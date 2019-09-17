@@ -9,8 +9,8 @@ Para entender listas enlazadas, usaremos como analogía un tren, el cual típica
 - Un enganche al próximo vagón 
 - Un elemento que transporta (en el caso de la imagen una caja).
 
-![vagones](./resources/vagones.png)
-![listas-enlazadas](./resources/listas-enlazadas.png)
+![vagones](../resources/vagones.png)
+![listas-enlazadas](../resources/listas-enlazadas.png)
 
 Cuando creamos una colección tipo lista, esta debe tener dos clases básicas: 
 
@@ -20,11 +20,11 @@ Cuando creamos una colección tipo lista, esta debe tener dos clases básicas:
 
 Una lista enlazada es simplemente una serie de objetos llamados Nodos enlazados con punteros.
 
-![](./resources/listas-simples-enlazadas.png)
+![](../resources/listas-simples-enlazadas.png)
 
 Para realizar una lista necesitamos como mínimo, una clase **Nodo** y una clase **lista**, además del elemento propio que queramos colocar dentro de la lista, en este caso profesores:
 
-![listas-simples-profesor](./exercises/EjercicioListaProfesores/listas-simples-profesor.png) La clase **Nodo**viene siendo como el vagón de un tren, el cual se entrelaza con otro vagón al tiempo que transporte un valor o un contenido en su interior. 
+![listas-simples-profesor](../exercises/EjercicioListaProfesores/listas-simples-profesor.png) La clase **Nodo**viene siendo como el vagón de un tren, el cual se entrelaza con otro vagón al tiempo que transporte un valor o un contenido en su interior. 
 
 La clase **Nodo** tiene como objetivo es encapsular:
 
