@@ -18,7 +18,8 @@ public:
 
     virtual ~ListaProfesores();
 
-    void insertarInicio(const Profesor& profesor);
+    void insertarInicio(const Profesor& _profesor);
+    void insertarFinal(const Profesor& _profesor);
     bool eliminarInicio();
     int totalNodos();
     bool listaVacia();

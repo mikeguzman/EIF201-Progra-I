@@ -18,13 +18,25 @@ ListaProfesores::~ListaProfesores() {
     }
 }
 
-void ListaProfesores::insertarInicio(const Profesor& profesor) {
-    actual = new Nodo (profesor, nullptr);
+void ListaProfesores::insertarInicio(const Profesor& _profesor) {
+    actual = new Nodo (_profesor, nullptr);
     if (primero == nullptr) {
         primero = actual;
     } else {
         actual->setSiguiente(primero);
         primero = actual;
+    }
+}
+
+void ListaProfesores::insertarFinal(const Profesor& _profesor) {
+    actual = primero;
+    if (primero == nullptr) {
+        primero = new Nodo(_profesor, nullptr);
+    } else {
+        while (actual->getSiguiente() != nullptr) {
+            actual = actual->getSiguiente();
+        }
+        actual->setSiguiente(new Nodo(_profesor, nullptr));
     }
 }
 

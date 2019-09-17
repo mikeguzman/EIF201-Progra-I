@@ -9,6 +9,8 @@ int main() {
     Profesor profesor3(333, "Pedro", 31, "Progra 3");
     Profesor profesor4(444, "Ana", 28, "Estructuras");
     Profesor profesor5(555, "Sebas", 50, "Calculo");
+    Profesor profesor6(777, "David", 29, "Operaciones");
+
 
     ListaProfesores* listaProfesores = new ListaProfesores();
 
@@ -22,6 +24,10 @@ int main() {
 
     // Se elimina el primer nodo
     listaProfesores->eliminarInicio();
+    std::cout << "Lista de profesores [" << listaProfesores->totalNodos() << "] \n" << listaProfesores->toString() << std::endl;
+
+    // Se inserta al final de la lista
+    listaProfesores->insertarFinal(profesor6);
     std::cout << "Lista de profesores [" << listaProfesores->totalNodos() << "] \n" << listaProfesores->toString() << std::endl;
 
     // Se elimina toda la lista
